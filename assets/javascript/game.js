@@ -1,5 +1,5 @@
 var words = [
-    "rick", "michonne", "carl", "lucy", "negan"
+    "rick", "michonne", "carl", "lucille", "negan", "walker", "hershel"
 ];
 
 var word = words[Math.floor(Math.random() * words.length)];
@@ -31,5 +31,8 @@ while (remainingLetters > 0) {
     }
 }
 
-alert(answerArray.join(" "));
+$("#AnswerArea").append(answerArray);
 alert("Good job! The answer was " + word);
+
+
+document.getElementById("fightscene").src = "assets/images/rickbloody.jpg";

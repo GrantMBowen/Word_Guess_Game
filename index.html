@@ -11,44 +11,84 @@
 </head>
 
 <body>
-<bg>
-    <div class="jumbotron bg-none" style="background-color: #cccccc;">
+    <bg>
+        <div class="jumbotron bg-none" style="background-color: #00000000;  ">
 
-        <h1 style="text-align: center">Guess the Word</h1>
-        <h2 style="border-top: 1px solid red; text-align: center">Walking Dead Editon</h2>
+            <h1 style="text-align: center">Guess the Word</h1>
+            <h2 style="border-top: 1px solid red; text-align: center; font-color: #e33;">Walking Dead Editon</h2>
 
-    </div>
+        </div>
 
-    <div class="row">
-        <div class="col-sm-6 text-center">
-            <div class="card text-white bg-secondary">
-                <div class="card-body">
-                    <img src="assets/images/rickvswalker.jpg" class="card-img-top" alt="Rick Vs Walkers">
+        <div class="row">
+            <div class="col-6 text-center">
+                <div class="card text-white bg-dark mb-3">
+                    <div class="card-body">
+                        <img id="fightscene" src="assets/images/rickvswalker.jpg" class="card-img-top img-responsive" alt="Rick Vs Walkers" style="display:normal;">
+                        <img src="assets/images/rickbloody.jpg" class="card-img-top" alt="Rick Won" style="display: none;">
+                        <img src="assets/images/walker.jpg" class="card-img-top" alt="Walker Won" style="display: none;">
 
-                    <h5 class="rickvs">Rick Vs. Walkers</h5>
-                    <p class="card-text">Choose a letter to see who wins!</p>
+                        <h5 class="rickvs">Rick Vs. Walkers</h5>
+                        <p class="card-text">Choose a letter to see who wins!</p>
 
-                    <a href="#" class="btn btn-warning">Reset</a>
+                       
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
 
 
-    <div class="col-sm-4 text-center">
-        <div class="card text-white bg-secondary">
-            <div class="card-body">
-                <h5 class="card-title">Click Here to</h5>
 
-                <a id="Startbtn" href="#" class="btn btn-primary">Start!</a>
+            <div class="col-6 text-center">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="card text-white bg-dark mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Click Here to</h5>
+
+                                <a id="Startbtn" href="#" class="btn btn-primary">Start!</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="card text-white bg-dark mb-3">
+                            <div class="card-body">
+                                <p>Type a Letter to Enter a guess</p>
+
+                                <h5 class="card-title"><span id="AnswerArea">Answer</span></h5>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="card text-white bg-dark mb-3">
+                            <div class="card-body">
+                                <h5>Letters Guessed:</h5>
+                                <p id="Guessed"></p>
+                                <h6>Guesses Remaining:</h5>
+
+                                <h5><span id="remaining">numremaining</span></h5>
+
+                                <a id="cancelbtn" href="#" class="btn btn-danger">Cancel</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </div>
-    </div>
-    </div>
 
-    <div></div>
-</bg>
+
+
+
+        </div>
+    </bg>
     <!-- <script type="text/javascript" src="assets/javascript/game.js"></script> -->
 </body>
 
