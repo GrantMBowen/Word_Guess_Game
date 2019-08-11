@@ -67,7 +67,7 @@ $(document).ready(function () {
 
         
 
-        function enterGuess() {
+        document.enterGuess() {
             var lett = document.getElementById("guess").value;
             document.getElementById("guess").value = "";
 
@@ -154,6 +154,14 @@ $(document).ready(function () {
             document.getElementById('RRguess').style.display='none';
             document.getElementById('youLose').style.display='none';
             document.getElementById('youWin').style.display='none';
+
+            word = "";
+            wordGuess = [];
+            wrongGuess = [];
+            guessBomb = 0;
+            winCount = 1;
+            guess = "";
+
             
 
         }
