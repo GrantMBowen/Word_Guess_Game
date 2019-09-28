@@ -67,7 +67,7 @@ $(document).ready(function () {
 
         
 
-        document.enterGuess() {
+        function enterGuess() {
             var lett = document.getElementById("guess").value;
             document.getElementById("guess").value = "";
 
